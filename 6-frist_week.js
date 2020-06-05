@@ -22,7 +22,7 @@ const findTheDuplicate = (array) => {
 };
 
 // time complexity: O(N)
-// space complexity: O(1)
+// space complexity: O(1) if not assign currentNumber and isDuplicate
 
 // Examples:
 
@@ -58,6 +58,9 @@ const findGreaterNumbers = (array) => {
 
   return count;
 };
+
+// time complexity: O(N^2)
+// space complexity: O(1) if not assign currentNumber and comparedNumber
 
 
 console.log(findGreaterNumbers([1,2,3])) // 3 (2 > 1, 3 > 2, and 3 > 1)
@@ -98,6 +101,8 @@ const separate = (array) => {
   return [ ...cats, ...water, ...dogs ];
 };
 
+// time complexity: O(N)
+// space complexity: O(1) if not assign currentElement
 
 console.log(separate(['dog','cat','water'])) // ['cat','water','dog']
 
@@ -153,6 +158,9 @@ const highestScoringWord = (string) => {
 
   return highestWord;
 };
+
+// time complexity: O(N)
+// space complexity: O(1) if not assign currentWord and currentScore
 
 console.log(highestScoringWord("a b c d e f")); // "f"
 console.log(highestScoringWord("a b c d e f")); // "f"
